@@ -7,7 +7,15 @@
 {% block content %}
   <div class="jumbo">
     <h2>Hi, {{ name }} !</h2>
-    <p> From your commits, I can tell that you are {{res}} with a score of {{ score }}</p>
+    <h4> From your commits, I can tell that you are {{res}} with a score of {{ score }}</h4>
   </div>
-  {{ div|safe}}
+  <div class = "music">
+  		<audio controls autoplay>
+    		<source src={{song}} type="audio/mpeg">
+		</audio> 
+  </div>
+  <div class="stat">
+    {{ div|safe }}
+  </div>
+
 {% endblock %}
