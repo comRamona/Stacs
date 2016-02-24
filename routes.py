@@ -73,7 +73,7 @@ def hello():
     name=request.form['name']
     url2="https://api.github.com/users/"+name+"/repos"
     ram='zachbpd'
-    auth = "75404564cf95658d753120a0868044581cddd657"
+    auth = ""  #need to put something here
     repos = requests.get(url2, auth=(ram,auth)).json()
     words=""
     tokens=[]
